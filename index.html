@@ -1,111 +1,169 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>
-    Dashboard
-  </title>
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-  <!-- Nucleo Icons -->
-  <link href="css/nucleo-icons.css" rel="stylesheet" />
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <!-- CSS Files -->
-  <link id="pagestyle" href="css/material-dashboard.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+    <nav class="Container navbar navbar-expand-lg pb-0 navbar-light bg-white">
+        <img src="/sim.png" width="10%">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse pb-0" id="navbarSupportedContent">
+          <ul class="navbar-nav mt-3">
+            <li class="nav-item active">
+                <a class="nav-link text-dark Activity" href="index.html">Activity <span class="sr-only">(current)</span></a>
+            </li>
 
-<body class="g-sidenav-show  bg-gray-200">
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
-    <div class="sidenav-header">
-      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href=" dashboard ">
-        <img src="img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold text-white">Sample</span>
-      </a>
-    </div>
-    <hr class="horizontal light mt-0 mb-2">
-    <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white " href="dashboard.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">dashboard</i>
-            </div>
-            <span class="nav-link-text ms-1">First page</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="tables.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">table_view</i>
-            </div>
-            <span class="nav-link-text ms-1">Second Page</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+            <li class="nav-item">
+                    <a class="nav-link text-muted" href="#">Expenses</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-muted" href="#">Goals</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link text-muted" href="#">CDs</a>
+              </li>
+
+            </ul>
+
+            <ul class="navbar-nav navbar-nav-scroll">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-muted mr-5" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift packaged_gift" aria-hidden="true"></i> Refer a friend</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+               
+                <a class="nav-link dropdown-toggle text-muted" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="rounded-circle px-3 py-2 text-white j_in_circle">J</span> Joseph Grimaldi</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+
+            <li class="nav-item pt-1 question-mark">
+                <a class="nav-link pt-0" href="#"><i class="fa fa-question-circle fa-2x text-info" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item pt-1">
+              <a class="nav-link pt-0" href="profile.html">Profile</a>
+            </li>
+            </ul>
+        </div>
+      </nav><hr>
     
-  </aside>
-  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-    <!-- Navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
-      <div class="container-fluid py-1 px-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Template</li>
-          </ol>
-          <h6 class="font-weight-bolder mb-0">Template</h6>
-        </nav>
-        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-            <div class="input-group input-group-outline">
-              <label class="form-label">Type here...</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
+      <section class="Container">
+        <div class="d-flex flex-wrap third-border">
           
+          <div class="col-lg-6.5 first-border">
+              <h1 class="amount_in_dollars">$550,000</h1>
+              <p class="text_color pr-2">$550,000 available balance - $0.00 in scheduled activities - $0.00 in Expenses - $0.00 <br> in Goal</p>
+          </div>
+    
+          <div class="col-lg-3.5 second-border px-1">
+              <h1>Protected Goals</h1>
+              <p class="text_color text-info">Start a Savings Goal Today!</p>
+          </div>
+    
+          <div class="col-lg-2 pl-1">
+              <h1>CDs</h1>   
+              <p class="text_color text-info">Open a CD today!</p>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-    <div class="container-fluid py-4">
-      <div class="row min-vh-80 h-100">
-        <div class="col-12">
-            Click <a href="dashboard.html">here</a> to go to dashboard
-        </div>
-    </div>
-    <footer class="footer pt-5">
-     
-    </footer>
-  </div>
-  </main>
 
-  <!--   Core JS Files   -->
-  <script src="js/core/popper.min.js"></script>
-  <script src="js/core/bootstrap.min.js"></script>
-  <script src="js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="js/material-dashboard.min.js?v=3.0.0"></script>
+        <form class="d-flex justify-content-between flex-wrap pt-3">
+            <div class="d-flex flex-wrap col-lg-10 pl-0 pr-0">
+                <div class="col-lg-10 pl-0 pr-0 mt-3">
+                  <input type="text" class="form-control" name="search" placeholder="Search...">
+                </div>
+                <div class="col-lg-2 p-0 ml-0 mt-3">
+                  <input type="button" class="search_button form-control bg-light text-muted" value="Search">
+                </div>
+                 
+            </div>
+            <div class="col-lg-1.5 p-0 mt-3 input_button">
+              <input type="button" class="form-control text-muted bg-light" id="move_money_button" value="Move Money">
+            </div>
+        </form>
+    
+        <table class="table table-responsive-sm font-weight-bold mt-4">
+          <thead>
+            <tr class="text-white">
+              <th class="Table_head_color">Date</th>
+              <th class="Table_head_color">Reference Number</th>
+              <th class="Table_head_color">Amount</th>
+            </tr>
+          </thead>
+    
+          <tbody class="text-info">
+            <tr>
+              <td class="table-secondary">13/12/2021</td>
+              <td class="table-secondary">023854764847</td>
+              <td class="table-secondary">+$12,500</td>
+            </tr>
+    
+            <tr>
+              <td>09/12/2021</td>
+              <td>023885857574</td>
+              <td>+$18,000</td>
+            </tr>
+    
+            <tr>
+              <td class="table-secondary">09/12/2021</td>
+              <td class="table-secondary">024766575889</td>
+              <td class="table-secondary">+$15,100</td>
+            </tr>
+    
+            <tr>
+              <td>05/12/2021</td>
+              <td>024567799484</td>
+              <td>+$19,050</td>
+            </tr>
+    
+            <tr>
+              <td class="table-secondary">15/12/2021</td>
+              <td class="table-secondary">027474666355</td>
+              <td class="table-secondary">+$14,700</td>
+            </tr>
+    
+            <tr>
+              <td>17/12/2021</td>
+              <td>027099374644</td>
+              <td>+$13,000</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
-
 </html>
