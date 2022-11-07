@@ -42,12 +42,12 @@ nav .Activity{
 
 .j_in_circle{
     border-radius:50%; 
-    width:100px;
-    height:40px;
-    text-align: center;
-    color: white;
-    margin-right: 10px;
-    background-color: rgb(47, 226, 31);
+    width:80px;
+    height:60px;
+    /* text-align: center; */
+    /* color: white; */
+    /* margin-right: 10px; */
+    /* background-color: rgb(47, 226, 31); */
 }
 
 hr{
@@ -56,6 +56,9 @@ hr{
 
 .amount_in_dollars{
     color: rgb(0, 195, 255);
+}
+.bg_amount_in_dollars{
+    background-color: rgb(0, 195, 255);
 }
 
 .text_color{
@@ -115,6 +118,8 @@ input[type=button] {
 
 .search_button {
     margin-left: 15px;
+    border-color: rgb(0, 195, 255) !important;
+
 }
 
 .form-profile {

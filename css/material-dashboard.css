@@ -3633,11 +3633,11 @@ textarea.form-control.is-invalid {
   }
 }
 
-.btn:hover {
+/* .btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
-}
+} */
 
 .btn-check+.btn:hover {
   color: var(--bs-btn-color);
@@ -23327,7 +23327,7 @@ hr.horizontal.gray-light {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background-image: none;
+  /* background-image: none; */
 }
 
 .navbar-toggler .navbar-toggler-icon .navbar-toggler-bar {

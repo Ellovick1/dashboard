@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="Container navbar navbar-expand-lg pb-0 navbar-light bg-white">
+    <nav class="Container navbar navbar-expand-lg pb-2 pb-lg-0 navbar-light bg-white">
         <img src="/" width="10%">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse pb-0" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse pb-0 justify-content-between" id="navbarSupportedContent">
           <ul class="navbar-nav mt-3">
             <li class="nav-item active">
                 <a class="nav-link text-dark Activity" href="index.html">Activity <span class="sr-only">(current)</span></a>
@@ -36,9 +36,9 @@
 
             </ul>
 
-            <ul class="navbar-nav navbar-nav-scroll">
+            <ul class="navbar-nav navbar-nav-scroll align-items-lg-center">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-muted mr-5" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift packaged_gift" aria-hidden="true"></i> Refer a friend</a>
+                <a class="nav-link dropdown-toggle text-muted" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift packaged_gift" aria-hidden="true"></i> Refer a friend</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="#">Action 1</a>
                     <a class="dropdown-item" href="#">Action 2</a>
@@ -47,23 +47,24 @@
 
             <li class="nav-item dropdown">
                
-                <a class="nav-link dropdown-toggle text-muted" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="rounded-circle px-3 py-2 text-white j_in_circle">J</span> Joseph Grimaldi</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="nav-link  text-muted" href="profile.html" id="">
+                    <img src="img/upload-image.jpg" class="rounded-circle px-3 py-2 text-white j_in_circle">Joseph Grimaldi
+                  </a>
+                <!-- <div class="dropdown-menu" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="#">Action 1</a>
                     <a class="dropdown-item" href="#">Action 2</a>
-                </div>
+                </div> -->
             </li>
 
-            <li class="nav-item pt-1 question-mark">
+            <!-- <li class="nav-item pt-1 question-mark">
                 <a class="nav-link pt-0" href="#"><i class="fa fa-question-circle fa-2x text-info" aria-hidden="true"></i></a>
-            </li>
-            <li class="nav-item pt-1">
+            </li> -->
+            <!-- <li class="nav-item pt-1">
               <a class="nav-link pt-0" href="profile.html">Profile</a>
-            </li>
-            <li class="nav-item pt-1">
+            </li> -->
+            <!-- <li class="nav-item pt-1">
               <a class="nav-link pt-0" href="payment.html">Payment</a>
-            </li>
+            </li> -->
             </ul>
         </div>
       </nav><hr>
@@ -93,12 +94,13 @@
                   <input type="text" class="form-control" name="search" placeholder="Search...">
                 </div>
                 <div class="col-lg-2 p-0 ml-0 mt-3">
-                  <input type="button" class="search_button form-control bg-light text-muted" value="Search">
+                  <input type="button" class="search_button form-control bg-light amount_in_dollars" value="Search">
                 </div>
                  
             </div>
-            <div class="col-lg-1.5 p-0 mt-3 input_button">
-              <input type="button" class="form-control text-muted bg-light" id="move_money_button" value="Move Money">
+            <div class="col-lg-1.5 p-0 mt-3 input_button"><a href="payment.html" style="text-decoration:none;">
+              <input type="button" class=" form-control text-white bg_amount_in_dollars " id="move_money_button" value="Move Money">
+            </a>
             </div>
         </form>
     
